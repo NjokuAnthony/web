@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    padding: 0 20px;
+    box-shadow: 5px 5px 7px black;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(211, 205, 205);
+
+
+    .left {
+        img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 7px rgb(62, 52, 52);
+        }
+    }
+
+    .right {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            
+
+            a {
+                text-decoration: none;
+                padding-left: 20px;
+                
+
+                &:hover {
+                    color: black;
+                    padding: 5px 10px;
+                    border: 1px solid black;
+                    background-color: rgb(62, 52, 52);
+                    border-radius: 10px;
+                    color: #fff;
+
+                    // @media(max-width: 576px) {
+                    //     width: 0%;
+                    //     padding: 8px;
+                        
+                    // }
+
+                    
+                }
+                
+            }
+        }
+    }
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url(./images/desk.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+
+
+
+
+    .left {
+        width: 50vw;
+        height: 90vh;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        @media(max-width: 576px) {
+            width: 100%;
+            
+        }
+
+
+        h1 {
+            width: 50%;
+            font-size: 50px;
+            padding-left: 70px;
+            margin-bottom: 40px;
+
+            @media(max-width: 576px) {
+                width: 100%;
+                font-size: 60px;
+                
+            }
+        }
+
+        p {
+            margin-bottom: 30px;
+            padding-left: 70px;
+            width: 60%;
+            font-weight: bold;
+
+            @media(max-width: 576px) {
+                width: 70%;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            background-color: rgb(211, 205, 205);
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 10px 50px;
+            margin-left: 70px;
+            width: 50%;
+            font-weight: bold;
+            text-align: center;
+
+            
+
+
+            &:hover {
+                background-color: rgb(62, 52, 52);
+                color: #fff;
+                border-color: 2px solid #fff ;
+                width: 60%;
+                padding: 20px 60px;
+                text-align: center;
+                
+
+            }
+        }
+
+    }
+
+
+}
