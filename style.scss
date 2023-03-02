@@ -153,6 +153,11 @@ section {
     top: 0%;
     left: 0%;
 
+    @media (max-width: 576px){
+        width: 100%;
+        
+    }
+
 
 
     .left {
@@ -160,6 +165,11 @@ section {
         // border: 1px solid;
         margin: 5px;
         padding: 10px;
+
+        @media (max-width: 576px){
+            display: hidden;
+
+        }
 
         img {
             width: 100%;
@@ -172,11 +182,24 @@ section {
         width: 50%;
         padding: 10px;
 
+        @media (max-width: 576px){
+            border: 2px solid;
+            width: 100%;
+            align-items: center;
+            
+        }
+
 
         h2 {
             font-size: 40px;
             padding-left: 40px;
             margin-bottom: 30px;
+
+            @media (max-width: 576px){
+                font-size: 40px;
+                text-align: center;
+                
+            }
         }
 
         p {
@@ -185,10 +208,16 @@ section {
         }
 
         .btn {
-            width: 100px
+            width: 100px;
             background-color: rgb(211, 205, 205);;
             padding: 10px;
             border-radius: 10px;
+
+
+            &:hover {
+                color: #fff;
+                background-color: black;
+            }
 
         }
     }
